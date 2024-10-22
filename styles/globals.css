@@ -1,0 +1,55 @@
+/* Global styles for your Next.js application */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes full height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Poppins', sans-serif; /* Use a clean, modern font */
+}
+
+#__next {
+    min-height: 100vh; /* Ensure the main container takes full height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+main {
+    flex: 1; /* Allow main content to grow and fill available space */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+p {
+    font-size: 0.9rem; /* Adjust text size */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h4 {
+    margin-bottom: 10px; /* Space below headings */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Use a clean, modern font */
+}

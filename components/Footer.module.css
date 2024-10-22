@@ -1,0 +1,150 @@
+.footer {
+    background-color: white; /* Change background color to white */
+    color: black; /* Set text color to black */
+    padding: 40px 20px; /* Padding around the footer */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: left; /* Align text to the left */
+    font-family: 'Poppins', sans-serif; /* Use the new font */
+}
+
+/* Green line style */
+.green-line {
+    width: 93%; /* Full width */
+    height: 1px; /* Adjust the height as needed */
+    background-color: green; /* Change to your desired color */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+}
+
+.footerContent {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space out sections evenly */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional: limit max width */
+    margin-bottom: 20px; /* Space below the footer content */
+}
+
+.info {
+    flex: 1; /* Allow this section to grow */
+    margin-right: 20px; /* Space between sections */
+}
+
+.logo {
+    max-width: 100px; /* Set a max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footerText {
+    font-size: 0.9rem; /* Set text size for footer text */
+    line-height: 1.5; /* Improve readability */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.quickLinks, .branches, .contact {
+    flex: 1; /* Allow these sections to grow */
+    margin: 0 20px; /* Space between sections */
+}
+
+.footerHeading {
+    margin-bottom: 10px; /* Space below headings */
+    font-size: 1.3rem; /* Set heading size */
+    font-weight: 600; /* Make headings bold */
+    color: black; /* Set heading color to black */
+}
+
+.linkList {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.linkList li {
+    margin: 5px 0; /* Space between list items */
+}
+
+.link {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    font-size: 0.9rem; /* Set link font size */
+}
+
+.link:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: darkgray; /* Change to dark gray on hover */
+}
+
+/* Social Links Styles */
+.socialLinks {
+    margin: 20px 0; /* Space above and below social links */
+    text-align: center; /* Center text for social links */
+    width: 100%; /* Full width to ensure left alignment */
+}
+
+.socialIcons {
+    display: flex; /* Use flexbox for social icons */
+    justify-content: center; /* Center icons */
+    margin-top: 10px; /* Space above icons */
+}
+
+.socialIcon {
+    color: black; /* Set icon color to black */
+    margin: 0 15px; /* Space between icons */
+    font-size: 1.5rem; /* Set icon size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.socialIcon:hover {
+    color: darkgray; /* Change color to dark gray on hover */
+}
+
+/* Privacy Notice */
+.privacy {
+    margin-top: 20px; /* Space above privacy notice */
+    font-size: 0.8rem; /* Reduce font size for privacy notice */
+    color: black; /* Set privacy text color to black */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .footerContent {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .footerHeading {
+        font-size: 1.1rem; /* Adjust heading size */
+    }
+
+    .footerText {
+        font-size: 0.8rem; /* Adjust text size for smaller screens */
+    }
+
+    .linkList li {
+        margin: 3px 0; /* Reduce space between list items */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .logo {
+        max-width: 80px; /* Smaller logo on very small screens */
+    }
+
+    .footerHeading {
+        font-size: 1rem; /* Further adjust heading size */
+    }
+
+    .footerText {
+        font-size: 0.6rem; /* Further adjust text size */
+    }
+}

@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: purple; /* Background color set to purple */
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.7); /* Box-shadow set to green */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* Set logo text color to white */
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem; /* Space between navigation links */
+}
+
+.nav a {
+    text-decoration: none;
+    color: white; /* Default link text color */
+    font-weight: bold; /* Make link text bold */
+    padding: 0.5rem 1rem; /* Add padding to links for consistent size */
+    display: inline-block; /* Ensure links are block elements for padding */
+    transition: color 0.3s; /* Smooth transition for color change */
+    border: 2px solid transparent; /* Add a transparent border for consistent size */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.nav a:hover {
+    color: green; /* Change link text color to green on hover */
+    border-color: green; /* Change border color on hover */
+}
+
+.nav a.active {
+    color: green; /* Change link text color to green when active */
+    border-color: green; /* Change border color when active */
+}
+
+/* Inquiries button styles */
+.inquiriesButton {
+    background-color: green; /* Set button background color to green */
+    color: white; /* Ensure button text color is white */
+    padding: 0.5rem 1rem; /* Add padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.inquiriesButton:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+/* Green line style */
+.green-line {
+    width: 100%; /* Full width */
+    height: 4px; /* Adjust the height as needed */
+    background-color: green; /* Change to your desired color */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+}
+
+/* Contact Info Styles */
+.contactInfo {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    padding: 0.5rem 1rem; /* Add some padding */
+    background-color: white; /* Set background color to white */
+    font-size: 0.9rem;
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem; /* Space between items */
+}
+
+.contactItem span {
+    margin-left: 0.5rem; /* Space between icon and text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 0.5rem; /* Reduce gap between links */
+        width: 100%; /* Full width for nav */
+    }
+
+    .nav a {
+        width: 100%; /* Make links full width */
+        text-align: center; /* Center text */
+    }
+
+    .contactInfo {
+        flex-direction: column; /* Stack contact items vertically */
+        align-items: flex-start; /* Align items to the start */
+        width: 100%; /* Full width for contact info */
+    }
+
+    .contactItem {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 0.5rem; /* Add bottom margin for spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem; /* Adjust logo size for smaller screens */
+    }
+
+    .nav a {
+        font-size: 0.9rem; /* Adjust font size for navigation links */
+    }
+
+    .inquiriesButton {
+        padding: 0.4rem 0.8rem; /* Adjust padding for smaller screens */
+    }
+}
+
+.icon {
+    color: #41a03e; /* Set icon color to green */
+}

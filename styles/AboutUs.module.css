@@ -1,0 +1,106 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.hero {
+    position: relative;
+    width: 1500px;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+
+}
+
+.heroHeading:hover {
+    color: #FFD700; /* Change to gold color on hover */
+}
+
+.content {
+text-align: center; 
+margin-bottom: 40px;
+
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; 
+    }
+.text {
+    font-size: 1.1rem;
+    color: #555; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    }
+.cta {
+    margin-top: 30px; 
+    text-align: center; 
+    }
+.ctaButton {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    }
+.ctaButton:hover {
+    background-color: #0056b3; 
+    }
+.teamContainer {
+    margin: 40px 0;
+    text-align: center;
+    }
+.subheading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; 
+    }
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    }
+.teamMember {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 250px; 
+    transition: transform 0.3s; 
+    }
+.teamMember:hover {
+    transform: translateY(-5px);
+    }
+    .memberImage {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+    }
+.missionVision {
+    display: flex;
+    justify-content: space-between; 
+    margin: 40px 0; 
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    }
+.mission, .vision {
+    flex: 1; 
+    margin: 0 20px; 
+    }
+.subheading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff; 
+    }
