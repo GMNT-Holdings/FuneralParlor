@@ -38,6 +38,14 @@
       transform: translateX(0); /* Move to original position */
   }
 }
+.icon {
+  color: green; /* Change icon color to green */
+  transition: transform 0.2s; /* Smooth transition for the effect */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Scale the icon on hover */
+}
 
 .contactContent {
   display: flex; /* Use flexbox for two-column layout */
@@ -88,20 +96,31 @@
   margin-left: -500px; /* Adjust the value as needed to move it to the right */
 }
 .emailButton {
-  margin: -10px 0 10px; /* Negative top margin to move it up */
-  padding: 10px 15px; /* Add padding for a button-like appearance */
-  font-size: 16px; /* Adjust font size if needed */
-  background-color: #28a745; /* Green background color */
+  position: relative; /* Position relative for the pseudo-element */
+  background-color: #28a745; /* Green background color for the email button in the contact form */
   color: white; /* White text color for contrast */
+  padding: 10px 15px; /* Add padding for the button */
   border-radius: 0px; /* Rounded corners */
   cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
   text-align: center; /* Center the text */
   display: inline-block; /* Make it behave like a button */
   text-decoration: none; /* Remove underline from text */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  position: relative; /* Position relative for the pseudo-element */
-  margin-bottom: 15px; /* Add space below the emailButton */
+  margin-bottom: 40px;
 
+}
+.emailButton::before {
+  content: ''; /* Empty content for the pseudo-element */
+  display: block; /* Make it a block element */
+  width: 580px; /* Increased width of the line */
+  height: 2px; /* Height of the line */
+  background-color: #28a745; /* Green color for the line */
+  position: absolute; /* Position it absolutely */
+  top: 0px; /* Position it above the button */
+  left: 0%; /* Adjust left position to center the line */
+  border-radius: 0px; /* Rounded corners for the line */
+}
+.emailButton:hover {
+  background-color: #218838; /* Darker green on hover */
 }
 
 .contactFormEmailButton {
@@ -131,10 +150,6 @@
 
 .contactFormEmailButton:hover {
   background-color: #218838; /* Darker green on hover */
-}
-.greenLineTop {
-  border-top: 2px solid green; /* Green line */
-  margin-bottom: 10px; /* Space below the line */
 }
 
 .contactInfo p {
