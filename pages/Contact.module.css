@@ -1,0 +1,162 @@
+/* src/styles/Contact.module.css */
+
+.contactContainer {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+}
+
+.heroSection {
+  position: relative; /* Position relative for absolute positioning of text */
+  width: 1500px;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden; /* Hide overflow */
+}
+
+.heroImage {
+  position: relative;
+    width: 1500px;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.heroText {
+  position: relative; /* Position text over the image */
+  text-align: left; /* Align text to the left */
+  color: white; /* Text color */
+  z-index: 2; /* Ensure the text is above the image */
+  padding-left: 20px; /* Add some padding to the left */
+  padding-top: 20px; /* Add some padding to the top */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  animation: slideIn 1s forwards; /* Apply slide-in animation */
+}
+
+@keyframes slideIn {
+  to {
+      transform: translateX(0); /* Move to original position */
+  }
+}
+.icon {
+  color: green; /* Change icon color to green */
+  transition: transform 0.2s; /* Smooth transition for the effect */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Scale the icon on hover */
+}
+
+.contactContent {
+  display: flex; /* Use flexbox for two-column layout */
+  justify-content: space-between; /* Space between columns */
+  gap: 20px; /* Space between columns */
+  margin-top: 20px; /* Space above the contact content */
+}
+
+.contactInfo {
+  flex: 1; /* Allow this column to grow */
+  background-color: #ffffff; /* Light background for contact info */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the contact info */
+}
+
+.contactForm {
+  flex: 1; /* Allow this column to grow */
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the form */
+}
+
+.contactForm input, 
+.contactForm textarea {
+  margin-bottom: 15px; /* Space between form fields */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  width: 100%; /* Full width */
+}
+
+.contactForm button {
+  padding: 10px;
+  background-color: #28a745; /* Green background for button */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.contactForm button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+.businessHours {
+  margin-left: -500px; /* Adjust the value as needed to move it to the right */
+}
+.emailButton {
+  position: relative; /* Position relative for the pseudo-element */
+  background-color: #28a745; /* Green background color for the email button in the contact form */
+  color: white; /* White text color for contrast */
+  padding: 10px 15px; /* Add padding for the button */
+  border-radius: 0px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  text-align: center; /* Center the text */
+  display: inline-block; /* Make it behave like a button */
+  text-decoration: none; /* Remove underline from text */
+  margin-bottom: 40px;
+
+}
+.emailButton::before {
+  content: ''; /* Empty content for the pseudo-element */
+  display: block; /* Make it a block element */
+  width: 580px; /* Increased width of the line */
+  height: 2px; /* Height of the line */
+  background-color: #28a745; /* Green color for the line */
+  position: absolute; /* Position it absolutely */
+  top: 0px; /* Position it above the button */
+  left: 0%; /* Adjust left position to center the line */
+  border-radius: 0px; /* Rounded corners for the line */
+}
+.emailButton:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.contactFormEmailButton {
+  position: relative; /* Position relative for the pseudo-element */
+  background-color: #28a745; /* Green background color for the email button in the contact form */
+  color: white; /* White text color for contrast */
+  padding: 10px 15px; /* Add padding for the button */
+  border-radius: 0px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  text-align: center; /* Center the text */
+  display: inline-block; /* Make it behave like a button */
+  text-decoration: none; /* Remove underline from text */
+  margin-bottom: 40px;
+}
+
+.contactFormEmailButton::before {
+  content: ''; /* Empty content for the pseudo-element */
+  display: block; /* Make it a block element */
+  width: 580px; /* Increased width of the line */
+  height: 2px; /* Height of the line */
+  background-color: #28a745; /* Green color for the line */
+  position: absolute; /* Position it absolutely */
+  top: 0px; /* Position it above the button */
+  left: 0%; /* Adjust left position to center the line */
+  border-radius: 0px; /* Rounded corners for the line */
+}
+
+.contactFormEmailButton:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.contactInfo p {
+  margin: 5px 0; /* Space between paragraphs */
+}
+
+.contactInfo i {
+  margin-right: 8px; /* Space between icon and text */
+  color: #28a745; /* Green color for icons */
+}
