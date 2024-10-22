@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Carousel from '../components/Carousel'; // Import the Carousel component
 import styles from '../styles/home.module.css';
+import React from 'react';
+import { FaUserPlus, FaFileAlt, FaPhoneAlt } from 'react-icons/fa'; // Import the Font Awesome icons
 
 function HomePage() {
   return (
@@ -15,24 +17,24 @@ function HomePage() {
         <div className={styles.widgetRow}>
           <div className={styles.elementorWidgetContainer}>
             <div className={styles.iconBox}>
-              <i className={`fas fa-user-plus ${styles.icon}`}></i>
+              <FaUserPlus className={styles.icon} /> {/* User Plus Icon */}
             </div>
             <h3>Join Mpiti</h3>
             <p>Sign up today and save</p>
           </div>
           <div className={styles.elementorWidgetContainer}>
             <div className={styles.iconBox}>
-              <i className={`fas fa-file-alt ${styles.icon}`}></i>
+              <FaFileAlt className={styles.icon} /> {/* File Alt Icon */}
             </div>
             <h3>Claims Submissions</h3>
             <p>Get claim information</p>
           </div>
           <div className={styles.elementorWidgetContainer}>
             <div className={styles.iconBox}>
-              <i className={`fas fa-phone-alt ${styles.icon}`}></i>
+              <FaPhoneAlt className={styles.icon} /> {/* Phone Alt Icon */}
             </div>
-            <h3>Call Me Back</h3>
-            <p>SMS "Mpiti" to 00000</p>
+            <h3>Contact Us</h3>
+            <p>Get in touch with us</p>
           </div>
         </div>
       </div>
