@@ -10,7 +10,7 @@ function HomePage() {
       <Head>
         <title>Mpiti's Funeral Home</title>
       </Head>
-      
+
       {/* Carousel Section */}
       <div className={styles.carouselContainer}>
         <Carousel /> {/* Use the Carousel component here */}
