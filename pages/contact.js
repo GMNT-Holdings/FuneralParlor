@@ -44,7 +44,7 @@ const Contact = () => {
           <div className={styles.greenLineTop}></div> {/* Green line above emailButton */}
           <h3 className={styles.emailButton}>Enquiries</h3>
           <p>
-            <FaPhone className={styles.icon} /> 083-488 3908 {/* Phone Icon */}
+            <FaPhone className={styles.icon} /> +27 (60) 397-1865 <br /> After Hours/ Emergency (083) 378-4751 {/* Phone Icon */}
           </p>
           <p>
             <FaEnvelope className={styles.icon} /> mpitifunerals@gmail.com {/* Email Icon */}
