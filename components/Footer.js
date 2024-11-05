@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className={styles.contact}>
                     <h4 className={styles.footerHeading}>Get in Touch</h4>
                     <p className={styles.footerText}>Erf 48, Fikile Mlomo Street, Mbizana, 4800</p>
-                    <p className={styles.footerText}>039 251 0331</p>
+                    <p className={styles.footerText}>+27 (60) 397-1865 <br /> After Hours/ Emergency (083) 378-4751</p>
                     <p className={styles.footerText}>mpitifunerals@gmail.com</p>
                 </div>
                 <div className={styles.branches}>
